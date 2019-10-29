@@ -1,0 +1,18 @@
+body{
+    background: url(https://wallpaperplay.com/walls/full/f/f/1/122862.jpg);
+    background-repeat: no-repeat;
+}
+div{
+    background-color: blue;
+    color: white;
+    border-color: red;
+    border-width: 4px;
+    border-style: double;
+}
+p{
+    color: yellow;
+}
+span{
+    background: red;
+    color: black;
+}

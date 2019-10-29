@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.art{
+    margin-left: auto;
+    margin-right: auto;
+}
+td{
+    height: 200px;
+    width: 150px;
+    padding: 75px;
+}
+
+#one{
+    background-color: teal;
+}
+#two{
+    background-color: tomato;
+}
+#three{
+    background-color: violet;
+}
+#four{
+    background-color: brown;
+}
+#five{
+    background-color: azure;
+}
