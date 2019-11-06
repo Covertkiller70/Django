@@ -1,8 +1,9 @@
 var count = 0;
+while(count < 5){
+    console.log('hello!');
+    count++;
+}
 
-while(count <= 10){
-    if (count % 2 === 0){
-        console.log(count)
-    }
-    count++
+for (let index = 0; index < 5; index++) {
+    console.log('hello');
 }
