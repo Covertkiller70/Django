@@ -1,14 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
 {% load static %}
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madcat Page</title>
-    <link rel="stylesheet" href="{% static "css/mystyle.css" %}">
+    <title>Django Level 2</title>
+    <link rel="stylesheet" href="{% static "css/main.css" %}">
 </head>
 <body>
-    <h1>Check it out, its a MadCat!</h1>
-    <img src="{% static "images/madcat.jpg" %}" height="500px" width="800px" alt="Crap, didnt show!">
+    <h1> Welcome to Django Level 2! </h1>
+    <h2> Here are your Access Records! </h2>
+
+    <div class="djangotwo">
+        {% if accessrecords %}
+        <table>
+            <thead>
+                <th>Site Name</th>
+                <th>Date Accessed</th>
+            </thead>
+            {% for acc in accessrecords %}
+            <tr>
+                <td>{{ acc.name }}</td>
+                <td>{{ acc.date }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p>NO ACCESS RECORDS FOUND!</p>
+        {% endif %}
+    </div>
 </body>
 </html>

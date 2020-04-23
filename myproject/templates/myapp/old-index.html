@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madcat Page</title>
+    <link rel="stylesheet" href="{% static "css/mystyle.css" %}">
+</head>
+<body>
+    <h1>Check it out, its a MadCat!</h1>
+    <img src="{% static "images/madcat.jpg" %}" height="500px" width="800px" alt="Crap, didnt show!">
+    <p>
+        {{insertme}}
+    </p>
+</body>
+</html>
