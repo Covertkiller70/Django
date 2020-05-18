@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block body_block %}
+<h1>Hello World, doing some CBV stuff over here!</h1>
+<h2>I'm getting called as a template CBV now!</h2>
+<h2>Let's inject some content: {{ inject_me }}</h2>
+<p>
+{{ pdata }}
+</p>
+
+{% endblock body_block %}

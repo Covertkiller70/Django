@@ -1,0 +1,20 @@
+{% extends 'hello_world/base.html' %}
+
+{% block body_block %}
+<div class='jumbotron'>
+    <h1>Welcome to School Details Page</h1>
+    <h2>School Details:</h2>
+    <p>Name: {{ school.name }}</p>
+    <p>Principal: {{ school.principal }}</p>
+    <p>Location: {{ school.location }}</p>
+
+    <h3>Students: </h3>
+    {% for student in school.students.all %}
+        <p>{{ student.name }} who is {{ student.age }} years old.</p>
+    {% endfor %}
+</div>
+<div class='container'>
+    <p><a class='btn btn-success' href="{% url 'hello_world:update' pk=school.pk %}">Update School</a></p>
+    <p><a class='btn btn-danger' href="{% url 'hello_world:delete' pk=school.pk %}">Delete School</a></p>
+</div>
+{% endblock body_block %}
